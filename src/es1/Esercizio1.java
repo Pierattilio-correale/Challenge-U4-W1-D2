@@ -24,6 +24,6 @@ public class Esercizio1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("inserisci la data per verificare che sia bisestile o meno");
         int anno= scanner.nextInt();
-       return  (anno % 4 == 0) && ((anno % 100 != 0) || (anno % 400 == 0));
+       return  (anno % 4 == 0) && ((anno % 100 != 0) || (anno % 100 == 0 &&anno % 400 == 0));
     }
 }
